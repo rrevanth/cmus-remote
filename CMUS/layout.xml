@@ -2,7 +2,7 @@
 <layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" onResume="resume" onPause="pause" lightcolor="#e77300" darkcolor="#c46e19">
   <grid>
     <row>
-    <text id="output" multiline="true" />
+    <label id="title" text="Connecting..." />
     </row>
     <row>
       <button icon="vdown" onTap="volume_down" />
@@ -14,10 +14,10 @@
       <button icon="playpause" onTap="play_pause" />
       <button icon="next" onTap="next" />
     </row>
-  <row>
-    <button text="-10s" ontap="jump_back" />
-    <button text="+10s" ontap="jump_forward" />
-  </row>
+    <row>
+      <button text="-10s" ontap="jump_back" />
+      <button text="+10s" ontap="jump_forward" />
+    </row>
     <row>
       <button icon="repeat" ontap="loop_repeat" />
       <button icon="stop" onTap="stop" />

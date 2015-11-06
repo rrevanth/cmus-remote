@@ -11,7 +11,9 @@ function updateInfo()
 		pout,perr,presult = libs.script.shell(cmd);
 	end);
 
-	layout.output.text = pout;
+	libs.server.update(
+		{ id = "title", text = pout })
+	;
 end 
 
 --@help Toggle play/pause
