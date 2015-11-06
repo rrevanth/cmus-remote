@@ -2,6 +2,9 @@
 <layout onLaunch="launch" onVolumeUp="volume_up" onVolumeDown="volume_down" onResume="resume" onPause="pause" lightcolor="#e77300" darkcolor="#c46e19">
   <grid>
     <row>
+    <text id="output" multiline="true" />
+    </row>
+    <row>
       <button icon="vdown" onTap="volume_down" />
       <button icon="vmute" onTap="volume_mute" />
       <button icon="vup" onTap="volume_up" />
