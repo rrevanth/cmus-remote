@@ -19,8 +19,8 @@
     <button text="+10s" ontap="jump_forward" />
   </row>
     <row>
-      <button icon="stop" onTap="stop" />
       <button icon="repeat" ontap="loop_repeat" />
+      <button icon="stop" onTap="stop" />
       <button icon="shuffle" ontap="shuffle" />
     </row>
   </grid>
