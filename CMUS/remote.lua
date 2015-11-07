@@ -12,8 +12,8 @@ function updateInfo()
 	end);
 
 	libs.server.update(
-		{ id = "title", text = pout })
-	;
+		{ id = "title", text = pout }
+	);
 end 
 
 --@help Toggle play/pause
@@ -165,6 +165,18 @@ actions.loop_repeat = function ()
 	local success, ex = pcall(function ()
 		pout,perr,presult = libs.script.shell(cmd);
 	end);
+
+	cmd = "cmus-remote -C 'set repeat?'"
+
+	pout = "";
+	presult = 0;
+	perr = "";
+	
+	local success, ex = pcall(function ()
+		pout,perr,presult = libs.script.shell(cmd);
+	end);
+
+	libs.device.toast(pout);
 end
 
 --@help Toggle shuffle
@@ -178,4 +190,41 @@ actions.shuffle = function ()
 	local success, ex = pcall(function ()
 		pout,perr,presult = libs.script.shell(cmd);
 	end);
+
+	cmd = "cmus-remote -C 'set shuffle?'"
+
+	pout = "";
+	presult = 0;
+	perr = "";
+	
+	local success, ex = pcall(function ()
+		pout,perr,presult = libs.script.shell(cmd);
+	end);
+
+	libs.device.toast(pout);
+end
+
+--@help Toggle shuffle
+actions.current_repeat = function ()
+	cmd = "cmus-remote -C 'toggle repeat_current'"
+
+	local pout = "";
+	local presult = 0;
+	local perr = "";
+	
+	local success, ex = pcall(function ()
+		pout,perr,presult = libs.script.shell(cmd);
+	end);
+
+	cmd = "cmus-remote -C 'set repeat_current?'"
+
+	pout = "";
+	presult = 0;
+	perr = "";
+	
+	local success, ex = pcall(function ()
+		pout,perr,presult = libs.script.shell(cmd);
+	end);
+
+	libs.device.toast(pout);
 end

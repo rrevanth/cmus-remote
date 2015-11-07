@@ -15,13 +15,14 @@
       <button icon="next" onTap="next" />
     </row>
     <row>
-      <button text="-10s" ontap="jump_back" />
-      <button text="+10s" ontap="jump_forward" />
+      <button icon="rwd" onTap="jump_back" />
+      <button icon="refresh" onTap="current_repeat" />
+      <button icon="ff" onTap="jump_forward" />
     </row>
     <row>
-      <button icon="repeat" ontap="loop_repeat" />
+      <button icon="repeat" onTap="loop_repeat" />
       <button icon="stop" onTap="stop" />
-      <button icon="shuffle" ontap="shuffle" />
+      <button icon="shuffle" onTap="shuffle" />
     </row>
   </grid>
 </layout>
