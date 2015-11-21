@@ -13,5 +13,4 @@ Use [detachable cmus](https://github.com/cmus/cmus/wiki/detachable-cmus) for det
 
 # Screenshot
 
-![Cmus-Remote.png]({{site.baseurl}}/Cmus-Remote.png)
-
+![Unified Cmus Remote]({{site.baseurl}}/https://raw.githubusercontent.com/rrevanth/cmus-remote/master/Cmus-Remote.png)
